@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Ai Matic</title>
+<meta name="description" content="Privacy Policy for Ai Matic and the Aimatic POS application for Windows and Android.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235b8cff'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='16' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand"><span class="brand-mark">A</span> Ai Matic</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/privacy.html" aria-current="page">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a class="nav-cta" href="mailto:nabeelmehmood448@gmail.com">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap legal-header">
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 15 July 2026</p>
+  </div>
+
+  <div class="wrap legal">
+
+    <p>This Privacy Policy explains how Ai Matic ("Ai Matic", "we", "us") handles data in connection with our website (aimatic.tech) and our software, including <strong>Aimatic POS</strong> (the point-of-sale application distributed for Windows and Android). It's written to describe what the application actually does, not a generic template.</p>
+
+    <h2>The short version</h2>
+    <div class="legal-note">
+      <p>Aimatic POS connects each installation directly to <strong>your own ERPNext server</strong>. We do not operate a central server that collects your sales, customer, or catalog data. That data is created, stored, and synced entirely between the app and the ERPNext instance your business controls.</p>
+    </div>
+
+    <h2>Who controls your data</h2>
+    <p>If your business uses Aimatic POS, <strong>your ERPNext instance is the data controller</strong> for the sales, customer, and inventory data the app creates — not Ai Matic. Ai Matic builds and, where contracted, maintains the software and, in some cases, hosts the ERPNext server on the business's behalf, but the business itself decides what data is collected from its customers and how long it's retained.</p>
+
+    <h2>What Aimatic POS collects and stores</h2>
+    <p>Depending on how a given installation is configured, the app handles:</p>
+    <ul>
+      <li><strong>ERPNext account credentials or an OAuth2 session</strong> — used to authenticate the terminal or the signed-in cashier against your ERPNext server. Passwords are verified by ERPNext itself and are never stored by the app.</li>
+      <li><strong>A randomly generated device identifier</strong> — created locally on first install to distinguish physical terminals and prevent duplicate sales during sync. It is not derived from any hardware serial number, advertising ID, or other identifier that could track the device across apps.</li>
+      <li><strong>Sales, catalog, and customer data</strong> synced from and to your ERPNext server — item lists, prices, stock levels, customer records, and completed or queued sales — cached locally so the terminal keeps working when the connection drops, and synced back once it's restored.</li>
+      <li><strong>An offline cashier PIN</strong>, stored locally as a one-way hash (never in plain text), used only to allow a previously-verified cashier to keep operating the terminal while it's offline.</li>
+    </ul>
+    <p>None of the above is transmitted to any server operated by Ai Matic. It is transmitted only between the device and the ERPNext server your business has configured the app to use.</p>
+
+    <h2>Android app permissions</h2>
+    <p>The Android version of Aimatic POS requests:</p>
+    <ul>
+      <li><strong>Camera</strong> — used only to scan a one-time device enrollment code when setting up a new terminal. The camera is not used at any other time and no images are stored or transmitted.</li>
+      <li><strong>Network access</strong> — required to communicate with your ERPNext server.</li>
+    </ul>
+    <p>The app does not request access to contacts, location, microphone, SMS, or files outside its own storage.</p>
+
+    <h2>What we don't do</h2>
+    <ul>
+      <li>We do not include advertising SDKs.</li>
+      <li>We do not include third-party analytics or tracking SDKs in Aimatic POS.</li>
+      <li>We do not sell or share data with third parties.</li>
+      <li>We do not operate a central database of your customers' or your business's sales data.</li>
+    </ul>
+
+    <h2>This website</h2>
+    <p>aimatic.tech does not use tracking cookies or third-party analytics. Our web server keeps ordinary access logs (IP address, requested page, timestamp) for security and troubleshooting, retained for a limited period, and not used for profiling or advertising.</p>
+
+    <h2>Security</h2>
+    <p>All communication between Aimatic POS and your ERPNext server is required to use HTTPS. On Android, authentication tokens and the offline cashier PIN hash are stored using the device's hardware-backed secure storage (Android Keystore), not in plain application storage.</p>
+
+    <h2>Data retention and deletion</h2>
+    <p>Locally cached data on a terminal can be cleared by uninstalling the app or repointing it to a different ERPNext server. Data held on your ERPNext server is retained and deleted according to your business's own policies — contact your ERPNext administrator to request deletion of specific records.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we'll update the "last updated" date above. Material changes will be reflected here before they take effect.</p>
+
+    <div class="contact-box">
+      <p>Questions about this policy or how a specific installation handles data: <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="brand"><span class="brand-mark">A</span> Ai Matic</a>
+        <p class="footer-meta">ERPNext implementation &amp; custom POS development.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a>
+      </nav>
+    </div>
+    <p class="footer-meta">© <span id="year"></span> Ai Matic. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.getElementById("navLinks");
+  navToggle.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
+</script>
+
+</body>
+</html>

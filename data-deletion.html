@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Deletion — Ai Matic</title>
+<meta name="description" content="How to request deletion of your Ai Matic Shopping account and personal data.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235b8cff'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='16' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand"><span class="brand-mark">A</span> Ai Matic</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+      <a href="/data-deletion.html" aria-current="page">Data Deletion</a>
+      <a class="nav-cta" href="mailto:nabeelmehmood448@gmail.com">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap legal-header">
+    <span class="eyebrow">Legal</span>
+    <h1>Data Deletion</h1>
+    <p class="updated">Last updated: 18 July 2026</p>
+  </div>
+
+  <div class="wrap legal">
+
+    <p>This page explains how to request deletion of your <strong>Ai Matic Shopping</strong> account and personal
+    data. It applies to Shopping specifically — the app with real end-customer accounts. Aimatic POS and Aimatic
+    Sales are used by our business customers' own staff, whose accounts are managed by that business's ERPNext
+    administrator directly.</p>
+
+    <h2>How to request deletion</h2>
+    <p>Choose whichever is easiest for you:</p>
+    <ul>
+      <li><strong>In the app</strong> — open Ai Matic Shopping, go to <strong>Account → Privacy &amp; data</strong>,
+      and tap <strong>Request Account Deletion</strong>.</li>
+      <li><strong>By email</strong> — send a request to
+      <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a> from the email address associated
+      with your account.</li>
+    </ul>
+
+    <h2>What happens after you request deletion</h2>
+    <p>Your request is logged and reviewed by the business — it is not instant, automatic deletion. Here's plainly
+    what happens to your data:</p>
+    <ul>
+      <li><strong>Removed or anonymized:</strong> your name, email address, phone number, and any saved delivery
+      addresses.</li>
+      <li><strong>Retained for a period:</strong> records of orders and invoices already placed under your account.
+      Businesses operating in Pakistan are legally required to keep sales and tax records for a minimum period —
+      this obligation belongs to the business, not to your account, so it doesn't go away just because an account
+      is deleted. Think of it the same way a shop keeps its own copy of a receipt even after handing you yours.</li>
+    </ul>
+    <p>Once the retention period that applies to a given business's records has passed, and subject to that
+    business's own data retention practices, the underlying order records may be deleted or fully anonymized as
+    well.</p>
+
+    <h2>Questions</h2>
+    <p>If anything here is unclear, or you want to know the specific status of your request:
+    <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a>.</p>
+
+    <div class="contact-box">
+      <p>See also our <a href="/privacy.html">Privacy Policy</a> for the full picture of what each Aimatic app
+      collects and why.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="brand"><span class="brand-mark">A</span> Ai Matic</a>
+        <p class="footer-meta">ERPNext implementation &amp; custom POS development.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/data-deletion.html">Data Deletion</a>
+        <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a>
+      </nav>
+    </div>
+    <p class="footer-meta">© <span id="year"></span> Ai Matic. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.getElementById("navLinks");
+  navToggle.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
+</script>
+
+</body>
+</html>

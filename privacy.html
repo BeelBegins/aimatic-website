@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Ai Matic</title>
-<meta name="description" content="Privacy Policy for Ai Matic and the Aimatic POS application for Windows and Android.">
+<meta name="description" content="Privacy Policy for Ai Matic and the Aimatic POS, Sales, Shopping, and Restaurant applications.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235b8cff'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='16' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,6 +18,7 @@
       <a href="/">Home</a>
       <a href="/privacy.html" aria-current="page">Privacy Policy</a>
       <a href="/terms.html">Terms of Service</a>
+      <a href="/data-deletion.html">Data Deletion</a>
       <a class="nav-cta" href="mailto:nabeelmehmood448@gmail.com">Get in touch</a>
     </nav>
   </div>
@@ -32,17 +33,17 @@
 
   <div class="wrap legal">
 
-    <p>This Privacy Policy explains how Ai Matic ("Ai Matic", "we", "us") handles data in connection with our website (aimatic.tech) and our software, including <strong>Aimatic POS</strong> (the point-of-sale application distributed for Windows and Android). It's written to describe what the application actually does, not a generic template.</p>
+    <p>This Privacy Policy explains how Ai Matic ("Ai Matic", "we", "us") handles data in connection with our website (aimatic.tech) and our software: <strong>Aimatic POS</strong>, <strong>Aimatic Sales</strong>, <strong>Aimatic Shopping</strong>, and <strong>Aimatic Restaurant</strong>. It's written to describe what each application actually does, not a generic template.</p>
 
     <h2>The short version</h2>
     <div class="legal-note">
-      <p>Aimatic POS connects each installation directly to <strong>your own ERPNext server</strong>. We do not operate a central server that collects your sales, customer, or catalog data. That data is created, stored, and synced entirely between the app and the ERPNext instance your business controls.</p>
+      <p>Every Aimatic app connects directly to <strong>your own ERPNext server</strong>. We do not operate a central server that collects your sales, customer, or catalog data. That data is created, stored, and synced entirely between the app and the ERPNext instance your business controls.</p>
     </div>
 
     <h2>Who controls your data</h2>
-    <p>If your business uses Aimatic POS, <strong>your ERPNext instance is the data controller</strong> for the sales, customer, and inventory data the app creates — not Ai Matic. Ai Matic builds and, where contracted, maintains the software and, in some cases, hosts the ERPNext server on the business's behalf, but the business itself decides what data is collected from its customers and how long it's retained.</p>
+    <p>If your business uses any Aimatic app, <strong>your ERPNext instance is the data controller</strong> for the sales, customer, and inventory data the app creates — not Ai Matic. Ai Matic builds and, where contracted, maintains the software and, in some cases, hosts the ERPNext server on the business's behalf, but the business itself decides what data is collected from its customers and how long it's retained.</p>
 
-    <h2>What Aimatic POS collects and stores</h2>
+    <h2>Aimatic POS</h2>
     <p>Depending on how a given installation is configured, the app handles:</p>
     <ul>
       <li><strong>ERPNext account credentials or an OAuth2 session</strong> — used to authenticate the terminal or the signed-in cashier against your ERPNext server. Passwords are verified by ERPNext itself and are never stored by the app.</li>
@@ -50,23 +51,46 @@
       <li><strong>Sales, catalog, and customer data</strong> synced from and to your ERPNext server — item lists, prices, stock levels, customer records, and completed or queued sales — cached locally so the terminal keeps working when the connection drops, and synced back once it's restored.</li>
       <li><strong>An offline cashier PIN</strong>, stored locally as a one-way hash (never in plain text), used only to allow a previously-verified cashier to keep operating the terminal while it's offline.</li>
     </ul>
-    <p>None of the above is transmitted to any server operated by Ai Matic. It is transmitted only between the device and the ERPNext server your business has configured the app to use.</p>
+    <p>The Android version requests <strong>Camera</strong> access, used only to scan a one-time device enrollment code when setting up a new terminal — not used at any other time, and no images are stored or transmitted — plus <strong>network access</strong> to reach your ERPNext server. It does not request contacts, location, microphone, SMS, or file access outside its own storage.</p>
 
-    <h2>Android app permissions</h2>
-    <p>The Android version of Aimatic POS requests:</p>
+    <h2>Aimatic Sales</h2>
+    <p>Aimatic Sales is an employee-facing app for our business customers' own sales staff (Sales User / Sales Manager roles), not a consumer app. A salesperson signs in with their individual ERPNext account through a secure login flow (OAuth2 with PKCE) — there is no shared password or API key built into the app. Once signed in, the app handles:</p>
     <ul>
-      <li><strong>Camera</strong> — used only to scan a one-time device enrollment code when setting up a new terminal. The camera is not used at any other time and no images are stored or transmitted.</li>
-      <li><strong>Network access</strong> — required to communicate with your ERPNext server.</li>
+      <li><strong>The signed-in employee's own ERPNext session</strong>, stored securely on the device and never shared with or derived from any other Aimatic app's login.</li>
+      <li><strong>Customer, pricing, and stock data</strong> the salesperson is permitted to see in ERPNext — customer names, outstanding balances, credit limits, item prices, and warehouse stock — used to build draft orders.</li>
+      <li><strong>Draft orders</strong> kept on the device so a salesperson can keep working without a connection, synced to ERPNext once back online.</li>
     </ul>
-    <p>The app does not request access to contacts, location, microphone, SMS, or files outside its own storage.</p>
+    <p>The Android version requests <strong>Camera</strong> access to scan a product barcode when searching for items — never for photos of people — and network access to reach your ERPNext server. It does not collect location/GPS data.</p>
+
+    <h2>Aimatic Shopping</h2>
+    <p>Aimatic Shopping is a consumer app that lets a business's own customers browse its catalogue and place orders. Creating an account uses ERPNext's own sign-up process; it never links to, or reuses, an existing customer record by guessing from a name, email, or phone number — a new account only ever creates a new customer record. Depending on what you do in the app, it handles:</p>
+    <ul>
+      <li><strong>Your account session</strong> (a secure OAuth2 login, separate from the POS/Sales apps' own logins), stored in the device's encrypted storage or, on the web version, in your browser's session storage.</li>
+      <li><strong>Your cart, delivery address, and order history</strong> — the delivery address is text you type in (a street address), not GPS location tracking.</li>
+      <li><strong>Payment method selection</strong> — the first version of Shopping only supports Cash on Delivery and Store Pickup. The app itself never collects card numbers or other online payment details; there is no payment gateway integrated yet.</li>
+    </ul>
+    <p>See "Requesting deletion of your account or data" below for how to have your Shopping account and personal data removed.</p>
+
+    <h2>Aimatic Restaurant</h2>
+    <p>Aimatic Restaurant is an internal pilot for restaurant waiter order-taking, currently used only for internal testing against sample data. It is not yet distributed on any public app store; if and when it is, this policy will be updated to describe what it collects in production use.</p>
 
     <h2>What we don't do</h2>
     <ul>
-      <li>We do not include advertising SDKs.</li>
-      <li>We do not include third-party analytics or tracking SDKs in Aimatic POS.</li>
+      <li>We do not include advertising SDKs in any Aimatic app.</li>
+      <li>We do not include third-party analytics or tracking SDKs.</li>
       <li>We do not sell or share data with third parties.</li>
       <li>We do not operate a central database of your customers' or your business's sales data.</li>
     </ul>
+
+    <h2>Requesting deletion of your account or data</h2>
+    <p>This section applies to <strong>Aimatic Shopping</strong>, the app with real end-customer accounts (Aimatic POS and Sales are used by our business customers' own staff, whose accounts are managed by that business's ERPNext administrator).</p>
+    <p>You can request deletion of your Shopping account and personal data at any time, three ways:</p>
+    <ul>
+      <li>In the app, under <strong>Account → Privacy &amp; data → Request Account Deletion</strong>.</li>
+      <li>By emailing <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a>.</li>
+      <li>Via the dedicated page at <a href="/data-deletion.html">aimatic.tech/data-deletion.html</a>.</li>
+    </ul>
+    <p>Submitting a request logs it for the business to review — it is not instant, automatic deletion. Here's honestly what happens: your personal profile data (name, email, phone number, saved addresses) is removed or anonymized. Order and invoice records connected to your account may need to be <strong>kept for a period</strong> even after your account is deleted, because businesses in Pakistan are legally required to retain sales and tax records for a minimum period regardless of whether the customer who placed the order still has an account. This is the same reason a paper receipt doesn't disappear from a shop's books just because a customer asks — the record-keeping obligation belongs to the business, not to your account.</p>
 
     <h2>This website</h2>
     <p>aimatic.tech does not use tracking cookies or third-party analytics. Our web server keeps ordinary access logs (IP address, requested page, timestamp) for security and troubleshooting, retained for a limited period, and not used for profiling or advertising.</p>
@@ -98,6 +122,7 @@
         <a href="/">Home</a>
         <a href="/privacy.html">Privacy Policy</a>
         <a href="/terms.html">Terms of Service</a>
+        <a href="/data-deletion.html">Data Deletion</a>
         <a href="mailto:nabeelmehmood448@gmail.com">nabeelmehmood448@gmail.com</a>
       </nav>
     </div>

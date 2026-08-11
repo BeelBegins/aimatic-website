@@ -1,0 +1,14 @@
+{
+  "site": "matic",
+  "host": "https://aimatic.tech",
+  "template": "encore",
+  "pages": [
+    "page-b118651a",
+    "page-81a0116d",
+    "page-0f31bf4d"
+  ],
+  "components": [
+    "encore_nav",
+    "encore_footer"
+  ]
+}

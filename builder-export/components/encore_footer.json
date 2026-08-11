@@ -1,0 +1,277 @@
+{
+  "doctype": "Builder Component",
+  "name": "encore_footer",
+  "component_name": "Encore Footer",
+  "block": {
+    "attributes": {},
+    "baseStyles": {
+      "alignItems": "center",
+      "borderTopColor": "var(--286be2dc-17d4-45b8-8086-fda5a07e0c01, #26263A)",
+      "borderTopStyle": "solid",
+      "borderTopWidth": "1px",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexShrink": 0,
+      "width": "100%"
+    },
+    "blockId": "04b3e25017",
+    "blockName": "Encore Footer",
+    "children": [
+      {
+        "attributes": {},
+        "baseStyles": {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "flexShrink": 0,
+          "gap": "12px",
+          "maxWidth": "1040px",
+          "padding": "56px 32px 60px",
+          "width": "100%"
+        },
+        "blockId": "5c31d27f5b",
+        "blockName": "Footer Inner",
+        "children": [
+          {
+            "attributes": {},
+            "baseStyles": {
+              "color": "var(--e9ee1724-9058-4f65-85e0-3a70d5b56598, #E3B84F)",
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": "10px",
+              "fontWeight": "400",
+              "height": "fit-content",
+              "letterSpacing": "0.08em",
+              "lineHeight": "1.7",
+              "minWidth": "10px",
+              "textAlign": "center",
+              "textTransform": "uppercase",
+              "width": "fit-content"
+            },
+            "blockId": "22ca166b20",
+            "blockName": "Footer Label",
+            "children": [],
+            "classes": [],
+            "customAttributes": {},
+            "element": "p",
+            "innerHTML": "AIMATIC",
+            "mobileStyles": {},
+            "rawStyles": {},
+            "tabletStyles": {}
+          },
+          {
+            "attributes": {},
+            "baseStyles": {
+              "color": "var(--3efc9036-e51d-4f83-810e-1c8dc923ec73, #F6EFDD)",
+              "fontFamily": "Gabarito",
+              "fontSize": "30px",
+              "fontWeight": "700",
+              "height": "fit-content",
+              "letterSpacing": "-0.02em",
+              "lineHeight": "1.08",
+              "minWidth": "10px",
+              "textAlign": "center",
+              "width": "fit-content"
+            },
+            "blockId": "cec4bb5b60",
+            "blockName": "Footer Line",
+            "children": [],
+            "classes": [],
+            "customAttributes": {},
+            "element": "p",
+            "innerHTML": "ERPNext · custom apps · global delivery.",
+            "mobileStyles": {
+              "fontSize": "24px"
+            },
+            "rawStyles": {},
+            "tabletStyles": {}
+          },
+          {
+            "attributes": {},
+            "baseStyles": {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "row",
+              "flexShrink": 0,
+              "flexWrap": "wrap",
+              "gap": "22px",
+              "justifyContent": "center",
+              "paddingTop": "10px",
+              "width": "100%"
+            },
+            "blockId": "59f1c4772d",
+            "blockName": "Footer Links",
+            "children": [
+              {
+                "attributes": {
+                  "href": "#platform"
+                },
+                "baseStyles": {
+                  "color": "var(--07c773ea-49c6-4501-8756-5b7c99b9b930, #8E8C9A)",
+                  "fontFamily": "Inter",
+                  "fontSize": "13.5px",
+                  "fontWeight": "500",
+                  "height": "fit-content",
+                  "lineHeight": "1.5",
+                  "minWidth": "10px",
+                  "textDecoration": "none",
+                  "width": "fit-content"
+                },
+                "blockId": "6c444ac63f",
+                "blockName": "The keynote",
+                "children": [],
+                "classes": [],
+                "customAttributes": {},
+                "element": "a",
+                "innerHTML": "Platform",
+                "mobileStyles": {},
+                "rawStyles": {
+                  "hover:color": "#F6EFDD",
+                  "transition": "color 0.15s ease-out"
+                },
+                "tabletStyles": {}
+              },
+              {
+                "attributes": {
+                  "href": "#promises"
+                },
+                "baseStyles": {
+                  "color": "var(--07c773ea-49c6-4501-8756-5b7c99b9b930, #8E8C9A)",
+                  "fontFamily": "Inter",
+                  "fontSize": "13.5px",
+                  "fontWeight": "500",
+                  "height": "fit-content",
+                  "lineHeight": "1.5",
+                  "minWidth": "10px",
+                  "textDecoration": "none",
+                  "width": "fit-content"
+                },
+                "blockId": "27f625b9ea",
+                "blockName": "The announcement",
+                "children": [],
+                "classes": [],
+                "customAttributes": {},
+                "element": "a",
+                "innerHTML": "Industries",
+                "mobileStyles": {},
+                "rawStyles": {
+                  "hover:color": "#F6EFDD",
+                  "transition": "color 0.15s ease-out"
+                },
+                "tabletStyles": {}
+              },
+              {
+                "attributes": {
+                  "href": "#approach"
+                },
+                "baseStyles": {
+                  "color": "var(--07c773ea-49c6-4501-8756-5b7c99b9b930, #8E8C9A)",
+                  "fontFamily": "Inter",
+                  "fontSize": "13.5px",
+                  "fontWeight": "500",
+                  "height": "fit-content",
+                  "lineHeight": "1.5",
+                  "minWidth": "10px",
+                  "textDecoration": "none",
+                  "width": "fit-content"
+                },
+                "blockId": "122d24590c",
+                "blockName": "Backstage",
+                "children": [],
+                "classes": [],
+                "customAttributes": {},
+                "element": "a",
+                "innerHTML": "Approach",
+                "mobileStyles": {},
+                "rawStyles": {
+                  "hover:color": "#F6EFDD",
+                  "transition": "color 0.15s ease-out"
+                },
+                "tabletStyles": {}
+              },
+              {
+                "attributes": {
+                  "href": "mailto:hello@aimatic.tech"
+                },
+                "baseStyles": {
+                  "color": "var(--e9ee1724-9058-4f65-85e0-3a70d5b56598, #E3B84F)",
+                  "fontFamily": "Inter",
+                  "fontSize": "13.5px",
+                  "fontWeight": "500",
+                  "height": "fit-content",
+                  "lineHeight": "1.5",
+                  "minWidth": "10px",
+                  "textDecoration": "none",
+                  "width": "fit-content"
+                },
+                "blockId": "420242d221",
+                "blockName": "Footer Mail",
+                "children": [],
+                "classes": [],
+                "customAttributes": {},
+                "element": "a",
+                "innerHTML": "hello@aimatic.tech",
+                "mobileStyles": {},
+                "rawStyles": {
+                  "hover:color": "#F6EFDD",
+                  "transition": "color 0.15s ease-out"
+                },
+                "tabletStyles": {}
+              }
+            ],
+            "classes": [],
+            "customAttributes": {},
+            "element": "div",
+            "mobileStyles": {
+              "gap": "12px"
+            },
+            "rawStyles": {},
+            "tabletStyles": {}
+          },
+          {
+            "attributes": {},
+            "baseStyles": {
+              "color": "var(--07c773ea-49c6-4501-8756-5b7c99b9b930, #8E8C9A)",
+              "fontFamily": "IBM Plex Mono",
+              "fontSize": "9.5px",
+              "fontWeight": "400",
+              "height": "fit-content",
+              "letterSpacing": "0.08em",
+              "lineHeight": "1.7",
+              "minWidth": "10px",
+              "paddingTop": "22px",
+              "textAlign": "center",
+              "textTransform": "uppercase",
+              "width": "fit-content"
+            },
+            "blockId": "1a66dd7b3d",
+            "blockName": "Footer Fine",
+            "children": [],
+            "classes": [],
+            "customAttributes": {},
+            "element": "p",
+            "innerHTML": "© Aimatic · All rights reserved",
+            "mobileStyles": {},
+            "rawStyles": {},
+            "tabletStyles": {}
+          }
+        ],
+        "classes": [],
+        "customAttributes": {},
+        "element": "div",
+        "mobileStyles": {
+          "padding": "40px 18px 44px"
+        },
+        "rawStyles": {},
+        "tabletStyles": {}
+      }
+    ],
+    "classes": [],
+    "customAttributes": {},
+    "element": "div",
+    "mobileStyles": {},
+    "rawStyles": {
+      "background": "linear-gradient(to bottom, transparent, rgba(227, 184, 79, 0.05))"
+    },
+    "tabletStyles": {}
+  }
+}

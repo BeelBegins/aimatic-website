@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://aimatic.tech/</loc>
+		<lastmod>2026-09-09</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://aimatic.tech/privacy.html</loc>
+		<lastmod>2026-09-09</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://aimatic.tech/terms.html</loc>
+		<lastmod>2026-09-09</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>https://aimatic.tech/data-deletion.html</loc>
+		<lastmod>2026-09-09</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.2</priority>
+	</url>
+</urlset>
